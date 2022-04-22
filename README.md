@@ -5,9 +5,10 @@
 ## مراحل آماده سازی ابزار برای استفاده
 
 1. ابتدا اقدام به نصب پایتون کنید. برای این کار به [https://www.python.org/downloads/](https://www.python.org/downloads/) رجوع کنید.
-2. در قم بعد، اقدام به دانلود این پروژه/ریپوزیتوری کنید. برای این کار به [https://github.com/mrekh/cando-event/archive/refs/heads/main.zip](https://github.com/mrekh/cando-event/archive/refs/heads/main.zip) رجوع کنید.
+2. در قدم بعد، اقدام به دانلود این پروژه/ریپوزیتوری کنید. برای این کار به [https://github.com/mrekh/cando-event/archive/refs/heads/main.zip](https://github.com/mrekh/cando-event/archive/refs/heads/main.zip) رجوع کنید؛ و فایل دریافتی را از حالت فشرده شده خارج کنید.
 3. اینک یک ترمینال در محل قرار گیری فولدر این ابزار باز کنید.
-4. اقدام به تایپ دستور زیر در ترمینال خود کنید: `streamlit run app.py`
+4. اقدام به تایپ دستور `pip install -r requirements.txt` در ترمینال خود کنید.
+5. اقدام به تایپ دستور `streamlit run app.py` در ترمینال خود کنید.
 
 ## استفاده از ابزار خروجی گیرنده ریلیتد سرچز
 
