@@ -7,15 +7,13 @@ from random import randint
 from time import sleep
 
 import advertools as adv
-import lxml
 import pandas as pd
 import requests
 import streamlit as st
 from bs4 import BeautifulSoup
 
+
 # ---------------------------------- Google related searches functions ----------------------------------
-
-
 def clean_query(query):
     """Cleaning query leading, and trailing space.
     Also, it replaces between word space with + sign.
@@ -50,6 +48,7 @@ def loop_over_related_searches(current_results):
     return new_results
 
 
+@st.cache
 def get_related_searches_based_on_depth(query, depth):
     """The main function that handeling the process of getting getting related searches.
     If the input depth be larger than 0, it calls an other function to loop over got related searches.
@@ -65,6 +64,7 @@ def get_related_searches_based_on_depth(query, depth):
 
 
 # ---------------------------------- Scraping SERP ----------------------------------
+@st.cache
 def get_serp(
     query, custom_search_engine_id, key, geolocation="ir", interface_lang="fa"
 ):
